@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class MovieEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     val uid: Int,
     @ColumnInfo(name = "name") val name: String?,
     @ColumnInfo(name = "image") val image: String?,
